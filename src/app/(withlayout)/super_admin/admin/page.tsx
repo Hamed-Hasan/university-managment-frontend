@@ -142,7 +142,7 @@ const AdminPage = () => {
           },
         ]}
       />
-      <ActionBar title="Department List">
+      <ActionBar title="Admin List">
         <Input
           size="large"
           placeholder="Search"
