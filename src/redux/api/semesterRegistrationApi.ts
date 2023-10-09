@@ -51,6 +51,7 @@ export const semesterRegistrationApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: [tagTypes.semesterRegistration],
     }),
+   
   }),
 });
 
@@ -60,6 +61,7 @@ export const {
   useAddSemesterRegistrationsMutation,
   useDeleteSemesterRegistrationsMutation,
   useUpdateSemesterRegistrationsMutation,
+
 } = semesterRegistrationApi;
 
 export default semesterRegistrationApi;

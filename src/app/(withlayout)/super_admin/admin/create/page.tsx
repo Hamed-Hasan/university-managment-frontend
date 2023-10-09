@@ -40,6 +40,7 @@ const CreateAdminPage = () => {
     formData.append("file", file as Blob);
     formData.append("data", data);
     message.loading("Creating...");
+    console.log(formData)
     try {
       await addAdminWithFormData(formData);
       message.success("Admin created successfully!");
@@ -65,7 +66,9 @@ const CreateAdminPage = () => {
       <h1>Create Admin</h1>
 
       <div>
-        <Form submitHandler={onSubmit} resolver={yupResolver(adminSchema)}>
+        <Form submitHandler={onSubmit} 
+        // resolver={yupResolver(adminSchema)}
+        >
           <div
             style={{
               border: "1px solid #d9d9d9",

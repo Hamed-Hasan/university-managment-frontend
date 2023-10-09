@@ -1,4 +1,4 @@
-import { IMeta, IStudent } from "@/types";
+import { IMeta, IMyCourse, IStudent } from "@/types";
 import { baseApi } from "./baseApi";
 import { tagTypes } from "../tag-types";
 
@@ -25,7 +25,7 @@ export const studentApi = baseApi.injectEndpoints({
     // get single student
     student: build.query({
       query: (id: string | string[] | undefined) => ({
-        url: `${STUDENT_URL}/profile/${id}`,
+        url: `${STUDENT_URL}/${id}`,
         method: "GET",
       }),
       providesTags: [tagTypes.student],
@@ -57,6 +57,7 @@ export const studentApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: [tagTypes.student],
     }),
+
   }),
 });
 
@@ -66,4 +67,6 @@ export const {
   useStudentQuery, // get single
   useUpdateStudentMutation, // update
   useDeleteStudentMutation, // delete
+  // my courses
+
 } = studentApi;

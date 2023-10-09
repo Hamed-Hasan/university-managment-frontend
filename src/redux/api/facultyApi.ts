@@ -1,4 +1,4 @@
-import { IFaculty, IMeta } from "@/types";
+import { ICoreFaculty, IFaculty, IFacultyCourse, IMeta } from "@/types";
 import { baseApi } from "./baseApi";
 import { tagTypes } from "../tag-types";
 
@@ -58,6 +58,7 @@ export const facultyApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: [tagTypes.faculty],
     }),
+
   }),
 });
 
@@ -67,4 +68,5 @@ export const {
   useFacultyQuery, // get single faculty user hook
   useUpdateFacultyMutation, // update single faculty user hook
   useDeleteFacultyMutation, // delete single faculty user hook
+
 } = facultyApi;
