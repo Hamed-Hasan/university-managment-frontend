@@ -9,3 +9,22 @@
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+.header-button{
+  border: 1px solid white;
+  border-radius: 21px 0px;
+  padding: 7px 17px;
+}
+
+.banner_btn_left, .banner_btn_right{
+  border: 1px solid white;
+  border-radius: 1px 26px;
+}
+
+.banner-images {
+  background-image: url(/_next/static/media/banner-shadow.d5793dcd.png);
+  background-position: 50% -7%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 74% 127%;
+}
