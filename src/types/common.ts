@@ -1,3 +1,5 @@
+import { number } from "yup";
+
 export interface IMeta {
   limit: number;
   page: number;
@@ -363,3 +365,16 @@ export interface IStudentEnrolledCourse {
   student: ICoreStudent;
   course: ICourse;
 }
+
+
+interface CourseProps {
+  id: number;
+  title: string;
+  category: string;
+  students: number;
+  duration: string;
+  price: string;
+  imageSrc: string;
+}
+
+export default CourseProps;
