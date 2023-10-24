@@ -367,7 +367,7 @@ export interface IStudentEnrolledCourse {
 }
 
 
-interface CourseProps {
+export interface CourseProps {
   id: number;
   title: string;
   category: string;
@@ -377,4 +377,10 @@ interface CourseProps {
   imageSrc: string;
 }
 
-export default CourseProps;
+
+
+export interface Category {
+  title: string;
+  image: string;
+  courseCount: string;
+}

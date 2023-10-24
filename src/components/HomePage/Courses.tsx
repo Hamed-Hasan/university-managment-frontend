@@ -1,6 +1,6 @@
 "use client"
 import Loading from "@/app/loading";
-import CourseProps from "@/types/common";
+import {CourseProps} from "@/types/common";
 import { coursesData } from "@/types/fakeData";
 import Image from "next/image";
 import Link from "next/link";
