@@ -53,6 +53,13 @@
   height: 132vh;
   background-size: 73% 99%;
 }
+.student-bg {
+    background-image: url("../assets/students-bg.png");
+    background-position: 47% 80%;
+    background-repeat: no-repeat;
+    height: 188vh;
+    background-size: cover;
+}
 .categories-images {
   background-image: url("../assets/categories-bg.png");
   background-position: calc(51% + 184px) calc(-653% + 17px);

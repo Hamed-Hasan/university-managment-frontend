@@ -3,6 +3,7 @@ import Categories from "@/components/HomePage/Categories";
 import Companies from "@/components/HomePage/Companies";
 import Courses from "@/components/HomePage/Courses";
 import Header from "@/components/HomePage/Header";
+import StudentSay from "@/components/HomePage/StudentSay";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Companies />
         <Courses />
         <Categories />
+        <StudentSay/>
       </main>
     </>
   );
