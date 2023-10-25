@@ -1,10 +1,31 @@
-"use client";
-import React from "react";
+"use client"
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import StudentCard from "@/assets/student-card.png";
 import Students from "@/assets/students.png";
+import Loading from "@/app/loading";
+
+
+const testimonials = [
+  {
+    name: "Hamed Hasan",
+    company: "Bostsolf.co",
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+  },
+  // Add more testimonials as needed
+];
 
 const StudentSay = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading for 2 seconds (adjust as needed)
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <section className="-mt-[190px]">
       <div className="student-bg container px-16 mx-auto body-font py-24">
@@ -20,10 +41,10 @@ const StudentSay = () => {
               />
             </div>
 
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col  items-center text-center">
-              <p className=" text-[#A99CFF] font-bold">Testimonials</p>
+            <div className="lg:flex-grow md:w-1/2 flex flex-col  items-center text-center">
+              <p className="text-[#A99CFF] font-bold">Testimonials</p>
               <h1 className="font-bold text-4xl text-white pt-4">
-                what our students say?
+                What Our Students Say?
               </h1>
               <Image
                 src={Students}
@@ -33,19 +54,23 @@ const StudentSay = () => {
                 alt="students"
               />
 
-              <div className="">
-                <h1 className="title-font font-bold text-xl text-white">
-                  Hamed Hasan
-                </h1>
-                <p className="py-2 leading-relaxed text-[#b7cbfad3]">
-                  Bostsolf.co
-                </p>
-                <p className=" font-sans leading-tight text-[#b7cbfa86]">
-                  One ipsum dolor sit amet, elit, sed do eiusmod tempor ut
-                  labore et dolore magna aliqua. Quis ipsum ultrices gravida.
-                  Risus dolore magna aliqua. Quis ipsum ultrices gravida.
-                </p>
-              </div>
+              {loading ? (
+                <Loading />
+              ) : (
+                testimonials.map((testimonial, index) => (
+                  <div key={index} className="py-8 text-center">
+                    <h1 className="title-font font-bold text-xl text-white">
+                      {testimonial.name}
+                    </h1>
+                    <p className="py-2 leading-relaxed text-[#b7cbfad3]">
+                      {testimonial.company}
+                    </p>
+                    <p className="font-sans leading-tight text-[#b7cbfa86]">
+                      {testimonial.text}
+                    </p>
+                  </div>
+                ))
+              )}
             </div>
           </div>
         </div>
