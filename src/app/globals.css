@@ -67,6 +67,15 @@
   height: 85vh;
   background-size: 44% 133%;
 }
+.footer-line {
+  background-image: url("../assets/footer-line.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 16vh;
+  background-size: contain;
+  position: relative;
+  top: -37px;
+}
 .categories-images {
   background-image: url("../assets/categories-bg.png");
   background-position: calc(51% + 184px) calc(-653% + 17px);
