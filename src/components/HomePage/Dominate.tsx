@@ -1,10 +1,29 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import DominateCard from "@/assets/donate-card.png";
-import Link from "next/link";
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import DominateCard from '@/assets/donate-card.png';
+import Link from 'next/link';
 
 const Dominate = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [content, setContent] = useState({
+    title: '',
+    description: '',
+  });
+
+  useEffect(() => {
+    setTimeout(() => {
+      setContent({
+        title: 'The number one factor in relevance drives out resistance.',
+        description:
+          'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      });
+
+      // Turn off loading
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <section className="dominate-bg">
       <div className="container px-14 py-24 mx-auto flex flex-wrap">
@@ -14,15 +33,25 @@ const Dominate = () => {
               Join Dominie At Best
             </p>
 
-            <p className=" text-white font-bold text-2xl leading-tight my-4">
-              The number one factor in relevance drives out resistance.
-            </p>
-            <p className=" text-[#B7CBFA] font-extralight text-md leading-tight">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </p>
+            {isLoading ? (
+              <div className="animate-pulse">
+                <p className="text-white font-bold text-2xl leading-tight my-4">
+                  Loading title...
+                </p>
+                <p className="text-[#B7CBFA] font-extralight text-md leading-tight">
+                  Loading description...
+                </p>
+              </div>
+            ) : (
+              <>
+                <p className="text-white font-bold text-2xl leading-tight my-4">
+                  {content.title}
+                </p>
+                <p className="text-[#B7CBFA] font-extralight text-md leading-tight">
+                  {content.description}
+                </p>
+              </>
+            )}
           </div>
         </div>
         <div className="lg:w-1/2 sm:w-1/3 w-full text-right flex justify-end rounded-lg overflow-hidden sm:mt-0">
