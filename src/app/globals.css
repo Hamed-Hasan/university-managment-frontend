@@ -33,7 +33,7 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.header-button, .course-button{
+.header-button, .course-button, .donate-btn{
   border: 1px solid white;
   border-radius: 21px 0px;
   padding: 7px 17px;
@@ -59,6 +59,13 @@
     background-repeat: no-repeat;
     height: 188vh;
     background-size: cover;
+}
+.dominate-bg {
+  background-image: url("../assets/dominate-bg.png");
+  background-position: 101% 42%;
+  background-repeat: no-repeat;
+  height: 85vh;
+  background-size: 44% 133%;
 }
 .categories-images {
   background-image: url("../assets/categories-bg.png");

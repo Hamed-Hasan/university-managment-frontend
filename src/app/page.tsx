@@ -3,6 +3,7 @@ import Categories from "@/components/HomePage/Categories";
 import Companies from "@/components/HomePage/Companies";
 import CourseNews from "@/components/HomePage/CourseNews";
 import Courses from "@/components/HomePage/Courses";
+import Dominate from "@/components/HomePage/Dominate";
 import Header from "@/components/HomePage/Header";
 import StudentSay from "@/components/HomePage/StudentSay";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Categories />
         <StudentSay/>
         <CourseNews/>
+        <Dominate/>
       </main>
     </>
   );
