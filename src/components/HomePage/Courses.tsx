@@ -53,7 +53,7 @@ const Courses: React.FC = () => {
   }, []);
 
   return (
-    <div className="courses">
+    <div className="courses container mx-auto">
       <div className="mx-auto text-center pb-14">
         <p className="text-[#B7CBFA] text-lg font-semibold">Join Dominie At Best</p>
         <h2 className="text-white text-3xl font-bold">Featured Courses</h2>

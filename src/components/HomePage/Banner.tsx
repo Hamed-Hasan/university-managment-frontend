@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <section className="text-gray-600 body-font banner-images relative z-10">
+        <section className="text-gray-600 body-font banner-images relative z-10 container mx-auto">
   <div className="container mx-auto flex px-5 pb-12 pt-8 items-center justify-center flex-col">
     
     <div className="text-center lg:w-2/3 w-full">

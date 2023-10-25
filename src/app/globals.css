@@ -53,6 +53,14 @@
   height: 132vh;
   background-size: 73% 99%;
 }
+.categories-images {
+  background-image: url("../assets/categories-bg.png");
+  background-position: calc(51% + 184px) calc(-653% + 17px);
+  background-repeat: no-repeat;
+  height: calc(126vh - 12rem);
+  background-size: 74% 98%;
+  margin-top: -206px;
+}
 
 .courses {
   background-image: url('../assets/Frame.png');

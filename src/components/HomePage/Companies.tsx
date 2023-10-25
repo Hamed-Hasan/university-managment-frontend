@@ -20,7 +20,7 @@ const images = [
 
 const Companies = () => {
   return (
-    <div className="-mt-24 mb-24 relative z-50 ">
+    <div className="-mt-24 mb-24 relative z-50 container mx-auto lg:px-24">
       <Carousel  dots={false} slidesToShow={5} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />} autoplay={true} >
         {images.map((item, index) => (
           <div key={index} className={item.className}>
