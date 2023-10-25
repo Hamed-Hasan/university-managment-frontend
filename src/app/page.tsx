@@ -1,6 +1,7 @@
 import Banner from "@/components/HomePage/Banner";
 import Categories from "@/components/HomePage/Categories";
 import Companies from "@/components/HomePage/Companies";
+import CourseNews from "@/components/HomePage/CourseNews";
 import Courses from "@/components/HomePage/Courses";
 import Header from "@/components/HomePage/Header";
 import StudentSay from "@/components/HomePage/StudentSay";
@@ -15,6 +16,7 @@ export default function Home() {
         <Courses />
         <Categories />
         <StudentSay/>
+        <CourseNews/>
       </main>
     </>
   );

@@ -90,3 +90,7 @@
   /* z-index: -99; */
 }
 
+.slick-track {
+	display: flex !important;
+	gap: 40px !important;
+}

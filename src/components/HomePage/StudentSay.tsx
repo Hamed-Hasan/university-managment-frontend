@@ -1,26 +1,23 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import StudentCard from "@/assets/student-card.png";
 import Students from "@/assets/students.png";
 import Loading from "@/app/loading";
 
-
 const testimonials = [
   {
     name: "Hamed Hasan",
     company: "Bostsolf.co",
-    text:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
   },
-  // Add more testimonials as needed
+  // more testimonials as needed
 ];
 
 const StudentSay = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading for 2 seconds (adjust as needed)
     setTimeout(() => {
       setLoading(false);
     }, 2000);
