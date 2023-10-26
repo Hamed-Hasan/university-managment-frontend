@@ -6,10 +6,12 @@ import { CiLocationOn } from "react-icons/ci";
 import Link from "next/link";
 
 const HomeFooter = () => {
+  const currentYear = new Date().getFullYear(); 
+  
   return (
     <footer className="text-gray-600 body-font bg-[#2D2752]">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+        <div className="flex flex-wrap md:text-left text-center gap-9 lg:gap-0 -mb-10 -mx-4">
           <div className="lg:w-1/3 md:w-1/2 w-full px-4">
             <h2 className="title-font  text-white font-bold tracking-widest text-xl mb-3">
               EducationTemp
@@ -77,9 +79,9 @@ const HomeFooter = () => {
         </div>
       </div>
       <div className="footer-line">
-        <div className="container px-5 relative top-12 py-8 flex flex-wrap mx-auto items-center">
+        <div className="container px-5 relative top-12 py-4 lg:py-8 flex flex-wrap mx-auto items-center">
           <p className=" text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center text-gray-400">
-            Copyright 2023 | All Rights Reserved{" "}
+            Copyright {currentYear}  | All Rights Reserved{" "}
             <Link
               href="https://hamedhasan-dev.vercel.app"
               className="text-[#9C9CFF]"

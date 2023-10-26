@@ -24,10 +24,10 @@ const StudentSay = () => {
   }, []);
 
   return (
-    <section className="-mt-[190px]">
-      <div className="student-bg container px-16 mx-auto body-font py-24">
+    <section className="-mt-[270px] lg:-mt-[190px]">
+      <div className="student-bg container px-10 lg:px-16 mx-auto body-font py-24">
         <div className="mt-[230px]">
-          <div className="bg-[#2D2752] flex px-16 rounded-3xl  py-24 md:flex-row flex-col items-center">
+          <div className="bg-[#2D2752] flex px-4 lg:px-16 rounded-3xl  py-24 md:flex-row flex-col items-center">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
               <Image
                 src={StudentCard}
@@ -40,7 +40,7 @@ const StudentSay = () => {
 
             <div className="lg:flex-grow md:w-1/2 flex flex-col  items-center text-center">
               <p className="text-[#A99CFF] font-bold">Testimonials</p>
-              <h1 className="font-bold text-4xl text-white pt-4">
+              <h1 className="font-bold text-xl lg:text-4xl text-white pt-4">
                 What Our Students Say?
               </h1>
               <Image

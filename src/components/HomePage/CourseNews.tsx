@@ -78,10 +78,10 @@ const CourseNews = () => {
   };
 
   return (
-    <div className='container mx-auto px-20'>
+    <div className='container mx-auto px-10 lg:px-20'>
       <div className='text-center'>
         <h2 className="font-bold text-3xl text-white">About latest tips, news, and courses</h2>
-        <p className="text-md text-slate-500 px-64 mx-auto pt-4 pb-14">
+        <p className="text-md text-slate-500 px-3 lg:px-64 mx-auto pt-4 pb-14">
           Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices
         </p>
       </div>

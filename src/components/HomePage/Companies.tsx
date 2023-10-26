@@ -13,9 +13,9 @@ import Image7 from "@/assets/phitron.png";
 const images = [
   { src: Image1, className: '-mt-10' },
   { src: Image2 },
-  { src: 'EPAM', className: 'text-[#8F85C2] font-bold text-4xl line-through' },
+  { src: 'EPAM', className: 'text-[#8F85C2] font-bold pr-5 lg:pr-0 text-4xl line-through' },
   { src: Image3 },
-  { src: Image6, width: 100, height: 100, text: 'Programming Hero', className: '-mt-8' },
+  { src: Image6, width: 100, height: 100, text: 'Programming Hero', className: 'lg:-mt-6 pl-8 lg:pl-0' },
   { src: Image4 },
   { src: Image5 },
   { src: Image7, width: 90, height: 90, className: 'ml-10' },

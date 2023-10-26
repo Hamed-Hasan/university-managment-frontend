@@ -26,7 +26,7 @@ const Dominate = () => {
 
   return (
     <section className="dominate-bg">
-      <div className="container px-14 py-24 mx-auto flex flex-wrap">
+      <div className="container px-14 pt-28  lg:py-24 mx-auto flex flex-wrap">
         <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
           <div className="w-full sm:p-4 px-4 mb-6">
             <p className="leading-relaxed text-[#A99CFF] font-bold text-md">
@@ -57,7 +57,7 @@ const Dominate = () => {
         <div className="lg:w-1/2 sm:w-1/3 w-full text-right flex justify-end rounded-lg overflow-hidden sm:mt-0">
           <Image src={DominateCard} width={400} height={400} alt="dominate" />
         </div>
-        <div className="flex items-center justify-center -mt-[50px]">
+        <div className="flex items-center justify-center pt-6 lg:pt-0 lg:-mt-[50px]">
           <Link
             href="/"
             className="course-button bg-transparent border-0  px-3 focus:outline-none rounded text-slate-400 md:mt-0"

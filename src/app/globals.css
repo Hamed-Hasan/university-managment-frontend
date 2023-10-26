@@ -64,7 +64,7 @@
   background-image: url("../assets/dominate-bg.png");
   background-position: 101% 42%;
   background-repeat: no-repeat;
-  height: 85vh;
+  height: 87vh;
   background-size: 44% 133%;
 }
 .footer-line {
@@ -92,14 +92,7 @@
   background-size: 7% 7%;
 }
 
-@media screen and (max-width: 768px) {
-  .banner-images {
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    min-height: 100vh;
-  }
-}
+
 
 .companies-carousel{
   position: relative;
@@ -109,4 +102,33 @@
 .slick-track {
 	display: flex !important;
 	gap: 40px !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .banner-images {
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    min-height: 100vh;
+  }
+  .courses {
+    background-size: cover; 
+  }
+  .categories-images {
+    background-position: 50% 4%;
+    background-repeat: no-repeat;
+    height: calc(88vh - 11rem);
+    background-size: 102% 61%;
+}
+.student-bg {
+  background-position: 45% 85%;
+  height: 158vh;
+}
+.dominate-bg {
+  background-position: 81% 159%;
+  height: 85vh;
+  background-size: 107% 108%;
+}
 }
