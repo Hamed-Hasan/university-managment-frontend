@@ -253,10 +253,10 @@ height: 1px;
 /* Navbar End */
 
 .ant-layout{
-  background-color: #0a0620;
+  background-color: #07041a;
 }
 .ant-layout-header{
-  background-color: #0a0620 !important;
+  background-color: #07041a !important;
 }
 @media screen and (max-width: 768px) {
   .banner-images {
