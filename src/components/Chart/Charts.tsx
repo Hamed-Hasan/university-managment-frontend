@@ -4,34 +4,35 @@ import AreaChartPlot from "./AreaChartPlot";
 import BarChartPlot from "./BarChartPlot";
 import PieChartPlot from "./PieChartPlot";
 import LineChartPlot from "./LineChartPlot";
+import RadarChartPlot from './RadarChartPlot';
 
 const Charts = () => {
   return (
     <>
       <section>
-        <div className="flex m-4 gap-2">
-          <div className="flex-1 px-2 justify-center w-16 bg-gray-700 shadow rounded-2xl h-300px">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 m-4 gap-4">
+          <div className="px-2 justify-center bg-[#001529] shadow rounded-2xl h-300px">
             <div className="">
               <p className="text-gray-900 font-bold">Total returns</p>
               <p className="py-4 font-bold">$30,000 </p>
               <p className="text-green-300">+34.5%</p>
             </div>
           </div>
-          <div className="flex-1 px-2 justify-center w-16 bg-gray-700 shadow rounded-2xl max-h-300px">
+          <div className="px-2 justify-center bg-[#001529] shadow rounded-2xl max-h-300px">
             <div className="">
               <p className="text-gray-900 font-bold">Total sales</p>
               <p className="py-4 font-bold">$30,000 </p>
               <p className="text-green-300">+34.5%</p>
             </div>
           </div>
-          <div className="flex-1 px-2 justify-center w-16  bg-gray-700 shadow rounded-2xl max-h-300px">
+          <div className="px-2 justify-center  bg-[#001529] shadow rounded-2xl max-h-300px">
             <div className="">
               <p className="text-gray-900 font-bold">Total subscriptions</p>
               <p className="py-4 font-bold">$30,000 </p>
               <p className="text-green-300">+34.5%</p>
             </div>
           </div>
-          <div className="flex-1 px-2 justify-center w-16  bg-gray-700 shadow rounded-2xl h-300px">
+          <div className="px-2 justify-center  bg-[#001529] shadow rounded-2xl h-300px">
             <div className="">
               <p className="text-gray-900 font-bold">Total returns</p>
               <p className="py-4 font-bold ">$30,000 </p>
@@ -41,24 +42,26 @@ const Charts = () => {
         </div>
       </section>
 
-      <section className="flex my-4 px-4 gap-3">
-        <div className="w-1/2 h-[300px] bg-gray-700 rounded-2xl">
+      <section className="grid lg:grid-cols-2 my-4 px-4 gap-4">
+        <div className="h-[300px] bg-[#001529] rounded-2xl">
         <AreaChartPlot/>
         </div>
      
-        <div className="w-1/2 h-[300px] bg-gray-700 rounded-2xl">
+        <div className="h-[300px] bg-[#001529] rounded-2xl">
         <BarChartPlot/>
         </div>
       </section>
 
-      <section className="flex my-4 px-4 gap-2">
-        <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl">
+      <section className="grid lg:grid-cols-3 my-4 px-4 gap-4">
+        <div className=" h-[250px] bg-[#001529] rounded-2xl">
         <PieChartPlot/>
         </div>
-        <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl">
+        <div className=" h-[250px] bg-[#001529] rounded-2xl">
         <LineChartPlot/>
         </div>
-        <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl"></div>
+        <div className=" h-[250px] bg-[#001529] rounded-2xl">
+          <RadarChartPlot/>
+        </div>
       </section>
     </>
   );

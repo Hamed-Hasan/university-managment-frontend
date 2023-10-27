@@ -42,7 +42,7 @@ const Header = () => {
             margin: "0px 5px",
           }}
         >
-          {role}
+          <p className="text-white font-semibold">{role}</p>
         </p>
         <Dropdown menu={{ items }}>
           <a>
