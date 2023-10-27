@@ -24,7 +24,7 @@ const StudentSay = () => {
   }, []);
 
   return (
-    <section className="-mt-[270px] lg:-mt-[190px]">
+    <section id="students" className="-mt-[270px] lg:-mt-[190px]">
       <div className="student-bg container px-10 lg:px-16 mx-auto body-font py-24">
         <div className="mt-[230px]">
           <div className="bg-[#2D2752] flex px-4 lg:px-16 rounded-3xl  py-24 md:flex-row flex-col items-center">

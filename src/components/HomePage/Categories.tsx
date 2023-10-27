@@ -17,7 +17,7 @@ const Categories: React.FC = () => {
   }, []);
 
   return (
-    <div className="pb-20">
+    <div id="categories" className="pb-20">
       <div className="categories-images"></div>
     <div className="container mx-auto px-7 mt-[-399px]">
       <h2 className="text-center text-white text-3xl py-16 font-bold">

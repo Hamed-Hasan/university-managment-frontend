@@ -9,10 +9,12 @@ import CourseNews from "@/components/HomePage/CourseNews";
 import Courses from "@/components/HomePage/Courses";
 import Dominate from "@/components/HomePage/Dominate";
 import StudentSay from "@/components/HomePage/StudentSay";
+import Navbar from "@/components/Navbar/index"
 import Loading from "./loading";
 
 const components = [
-  Header,
+  Navbar,
+  // Header,
   Banner,
   Companies,
   Courses,
