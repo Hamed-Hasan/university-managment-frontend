@@ -9,6 +9,24 @@
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(0deg, #374379, #1B143F 100%);
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh rgba(43, 54, 117, 0.808);
+  border-radius: 10px; 
+  height: 150px !important; 
+}
+
 
 .header-button{
   border: 1px solid white;
