@@ -2,6 +2,7 @@
 import React from 'react';
 import AreaChartPlot from "./AreaChartPlot";
 import BarChartPlot from "./BarChartPlot";
+import PieChartPlot from "./PieChartPlot";
 
 const Charts = () => {
   return (
@@ -50,7 +51,9 @@ const Charts = () => {
       </section>
 
       <section className="flex my-4 px-4 gap-2">
-        <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl"></div>
+        <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl">
+        <PieChartPlot/>
+        </div>
         <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl"></div>
         <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl"></div>
       </section>
