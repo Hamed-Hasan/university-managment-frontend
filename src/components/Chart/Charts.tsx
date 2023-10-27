@@ -3,6 +3,7 @@ import React from 'react';
 import AreaChartPlot from "./AreaChartPlot";
 import BarChartPlot from "./BarChartPlot";
 import PieChartPlot from "./PieChartPlot";
+import LineChartPlot from "./LineChartPlot";
 
 const Charts = () => {
   return (
@@ -54,7 +55,9 @@ const Charts = () => {
         <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl">
         <PieChartPlot/>
         </div>
-        <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl"></div>
+        <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl">
+        <LineChartPlot/>
+        </div>
         <div className=" w-1/3 h-[250px] bg-gray-700 rounded-2xl"></div>
       </section>
     </>
