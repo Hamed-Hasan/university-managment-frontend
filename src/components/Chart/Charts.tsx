@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { FcLineChart, FcFlowChart, FcComboChart, FcAreaChart } from 'react-icons/fc';
+import CountUp from 'react-countup';
 import AreaChartPlot from './AreaChartPlot';
 import BarChartPlot from './BarChartPlot';
 import PieChartPlot from './PieChartPlot';
@@ -11,26 +12,26 @@ import RadarChartPlot from './RadarChartPlot';
 const chartData = [
   {
     icon: <FcLineChart size={48} />,
-    title: 'Total returns',
-    amount: '$30,000',
+    title: 'Total Courses',
+    amount: '$25,000',
     percentage: '+34.5%',
   },
   {
     icon: <FcAreaChart size={48} />,
-    title: 'Total returns',
+    title: 'Total Faculty',
     amount: '$30,000',
     percentage: '+34.5%',
   },
   {
     icon: <FcComboChart size={48} />,
-    title: 'Total returns',
-    amount: '$30,000',
+    title: 'Total Departments',
+    amount: '$44,000',
     percentage: '+34.5%',
   },
   {
     icon: <FcFlowChart size={48} />,
-    title: 'Total returns',
-    amount: '$30,000',
+    title: 'Total Semesters',
+    amount: '$49,000',
     percentage: '+34.5%',
   },
 ];
@@ -46,7 +47,9 @@ const Charts = () => {
                 <div className="mx-auto">{chart.icon}</div>
                 <div className="pr-6 mt-3">
                   <p className="text-gray-400 text-xs font-bold">{chart.title}</p>
-                  <p className="font-bold text-2xl py-1 text-gray-200">{chart.amount}</p>
+                  <p className="font-bold text-2xl py-1 text-gray-200">
+                  <CountUp end={parseInt(chart.amount.replace('$', '').replace(',', ''), 10)} duration={5} />
+                  </p>
                   <p className="text-green-300">{chart.percentage}</p>
                 </div>
               </div>
