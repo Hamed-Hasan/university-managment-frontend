@@ -50,7 +50,7 @@ const LineChartPlot = () => {
             <Tooltip />
             <Legend />
             <Line type="monotone" dataKey="paid" stroke="#8884d8" strokeWidth={2} />
-            <Line type="monotone" dataKey="organic" stroke="#82ca9d" strokeWidth={2}/>
+            <Line type="monotone" dataKey="organic" stroke="#1B143F" strokeWidth={2}/>
           </LineChart>
         </ResponsiveContainer>
       </>

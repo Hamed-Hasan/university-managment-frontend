@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';
+import React, { useState } from 'react';
 import { FcLineChart, FcFlowChart, FcComboChart, FcAreaChart } from 'react-icons/fc';
 import CountUp from 'react-countup';
 import AreaChartPlot from './AreaChartPlot';
@@ -8,35 +8,40 @@ import BarChartPlot from './BarChartPlot';
 import PieChartPlot from './PieChartPlot';
 import LineChartPlot from './LineChartPlot';
 import RadarChartPlot from './RadarChartPlot';
+import { useDepartmentsQuery } from '@/redux/api/departmentApi';
 
-const chartData = [
-  {
-    icon: <FcLineChart size={48} />,
-    title: 'Total Courses',
-    amount: '$25,000',
-    percentage: '+34.5%',
-  },
-  {
-    icon: <FcAreaChart size={48} />,
-    title: 'Total Faculty',
-    amount: '$30,000',
-    percentage: '+34.5%',
-  },
-  {
-    icon: <FcComboChart size={48} />,
-    title: 'Total Departments',
-    amount: '$44,000',
-    percentage: '+34.5%',
-  },
-  {
-    icon: <FcFlowChart size={48} />,
-    title: 'Total Semesters',
-    amount: '$49,000',
-    percentage: '+34.5%',
-  },
-];
+
 
 const Charts = () => {
+  const { data } = useDepartmentsQuery([]);
+  const departments = (data?.departments as unknown as any[]);
+  const chartData = [
+    {
+      icon: <FcLineChart size={48} />,
+      title: 'Total Courses',
+      amount: 25000,
+      percentage: '+34.5%',
+    },
+    {
+      icon: <FcAreaChart size={48} />,
+      title: 'Total Faculty',
+      amount: 30000,
+      percentage: '+34.5%',
+    },
+    {
+      icon: <FcComboChart size={48} />,
+      title: 'Total Departments',
+      amount: departments?.length,
+      percentage: '+34.5%',
+    },
+    {
+      icon: <FcFlowChart size={48} />,
+      title: 'Total Semesters',
+      amount: 49000,
+      percentage: '+34.5%',
+    },
+  ];
+
   return (
     <>
       <section>
@@ -47,10 +52,10 @@ const Charts = () => {
                 <div className="mx-auto">{chart.icon}</div>
                 <div className="pr-6 mt-3">
                   <p className="text-gray-400 text-xs font-bold">{chart.title}</p>
-                  <p className="font-bold text-2xl py-1 text-gray-200">
-                  <CountUp end={parseInt(chart.amount.replace('$', '').replace(',', ''), 10)} duration={5} />
+                  <p className="font-bold text-center text-2xl py-1 text-gray-200">
+                  <CountUp end={chart.amount} duration={5} />
                   </p>
-                  <p className="text-green-300">{chart.percentage}</p>
+                  <p className="text-green-300 text-center">{chart.percentage}</p>
                 </div>
               </div>
             </div>

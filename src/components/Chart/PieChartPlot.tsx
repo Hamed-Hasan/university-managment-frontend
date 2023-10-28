@@ -8,7 +8,7 @@ const PieChartPlot = () => {
         "#8884d8",
         "#FA8072",
         "#AF69EE",
-        "#3DED97",
+        "#1B143F",
         "#3AC7EB",
         "#F9A603",
       ];

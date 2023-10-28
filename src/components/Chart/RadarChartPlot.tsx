@@ -35,7 +35,7 @@ const RadarChartPlot = () => {
           <RadarChart outerRadius={90} width={730} height={250} data={data}>
             <PolarGrid />
             <PolarAngleAxis dataKey="day" />
-            <Radar name="Orders" dataKey="amount" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6} />
+            <Radar name="Orders" dataKey="amount" stroke="#1B143F" fill="#1B143F" fillOpacity={0.6} />
             <Legend />
             <Tooltip/>
           </RadarChart>
