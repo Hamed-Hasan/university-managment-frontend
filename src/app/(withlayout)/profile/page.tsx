@@ -1,11 +1,7 @@
-import Charts from "@/components/Chart/Charts";
-
 const ProfilePage = () => {
   return (
     <div>
-      {/* <h1>Welcome back to your profile</h1>
-       */}
-       <Charts/>
+      <h1>Welcome back to your profile</h1>
     </div>
   );
 };
