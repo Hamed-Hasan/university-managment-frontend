@@ -1,5 +1,3 @@
-import { number } from "yup";
-
 export interface IMeta {
   limit: number;
   page: number;
@@ -364,23 +362,4 @@ export interface IStudentEnrolledCourse {
   academicSemester: IAcademicCoreSemester;
   student: ICoreStudent;
   course: ICourse;
-}
-
-
-export interface CourseProps {
-  id: number;
-  title: string;
-  category: string;
-  students: number;
-  duration: string;
-  price: string;
-  imageSrc: string;
-}
-
-
-
-export interface Category {
-  title: string;
-  image: string;
-  courseCount: string;
 }
