@@ -12,8 +12,8 @@ const CreateDepartmentPage = () => {
   const onSubmit = async (data: any) => {
     message.loading("Creating.....");
     try {
-      console.log(data);
       await addDepartment(data);
+      console.log(data);
       message.success("Department added successfully");
     } catch (err: any) {
       console.error(err.message);

@@ -16,7 +16,6 @@ type IDProps = {
 
 const EditDepartmentPage = ({ params }: IDProps) => {
   const { id } = params;
-
   const { data, isLoading } = useDepartmentQuery(id);
   const [updateDepartment] = useUpdateDepartmentMutation();
 

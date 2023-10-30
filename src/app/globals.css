@@ -1,7 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(0deg, #374379, #1B143F 100%);
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh rgba(43, 54, 117, 0.808);
+  border-radius: 10px; 
+  height: 150px !important; 
+}
+
+
+.header-button{
+  border: 1px solid white;
+  border-radius: 21px 0px;
+  padding: 7px 17px;
+}
+
+.banner_btn_left, .banner_btn_right{
+  border: 1px solid white;
+  border-radius: 1px 26px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header-button, .course-button, .donate-btn{
+  border: 1px solid white;
+  border-radius: 21px 0px;
+  padding: 7px 17px;
+}
+
+.banner_btn_left, .banner_btn_right{
+  border: 1px solid white;
+  border-radius: 1px 26px;
+}
+
+
+
+.banner-images {
+  background-image: url("../assets/banner-shadow.png");
+  background-position: 50% 163%;
+  background-repeat: no-repeat;
+  height: 132vh;
+  background-size: 73% 99%;
+}
+.student-bg {
+    background-image: url("../assets/students-bg.png");
+    background-position: 47% 80%;
+    background-repeat: no-repeat;
+    height: 188vh;
+    background-size: cover;
+}
+.dominate-bg {
+  background-image: url("../assets/dominate-bg.png");
+  background-position: 101% 42%;
+  background-repeat: no-repeat;
+  height: 87vh;
+  background-size: 44% 133%;
+}
+.footer-line {
+  background-image: url("../assets/footer-line.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 16vh;
+  background-size: contain;
+  position: relative;
+  top: -37px;
+}
+.categories-images {
+  background-image: url("../assets/categories-bg.png");
+  background-position: calc(51% + 184px) calc(-653% + 17px);
+  background-repeat: no-repeat;
+  height: calc(126vh - 12rem);
+  background-size: 74% 98%;
+  margin-top: -206px;
+}
+
+.courses {
+  background-image: url('../assets/Frame.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 7% 7%;
+}
+
+
+
+.companies-carousel{
+  position: relative;
+  /* z-index: -99; */
+}
+
+.slick-track {
+	display: flex !important;
+	gap: 40px !important;
+}
+
+
+
+/* Navbar */
+
+.navbar {
+  padding-bottom: 1px;
+  border-bottom: solid 1px #e8e8e8;
+  background-color: white;
+  box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.12),
+    0 6px 16px -11px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 99990;
+}
+
+.nav-header {
+  background-color: #1B143F;
+  padding: 0 4px 0 24px;
+  border-bottom: 1px dashed #f6f6f896;
+}
+
+:where(.css-dev-only-do-not-override-1vr7spz).ant-layout .ant-layout-header, :where(.css-dev-only-do-not-override-1vr7spz).ant-layout.ant-layout-footer {
+  margin-bottom: -3px !important;
+}
+ul.ant-menu-overflow.ant-menu.ant-menu-root.ant-menu-horizontal.ant-menu-light.css-dev-only-do-not-override-1vr7spz {
+  background-color: #1B143F;
+  color: white;
+  font-weight: 600;
+}
+
+.logo {
+  width: 200px;
+  float: left;
+}
+
+.logo a {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.navbar-menu {
+  width: calc(100% - 200px);
+  float: left;
+}
+.navbar-menu .ant-layout-header {
+  padding: 0 20px;
+}
+
+.navbar-menu .ant-menu-horizontal {
+  border-bottom: 0;
+}
+
+.navbar-menu .ant-menu-item {
+  padding-bottom: 0px;
+}
+
+.navbar-menu .leftMenu {
+  float: left;
+}
+
+.navbar-menu .rightMenu {
+  float: right;
+}
+
+.menuButton {
+  float: right;
+  height: 32px;
+  padding: 6px;
+  margin-top: 14px;
+  display: none;
+  background: none;
+  margin-right: 10px;
+}
+
+.ant-drawer-body {
+  padding: 0;
+}
+
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item,
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-submenu {
+  display: inline-block;
+  width: 100%;
+}
+
+.ant-drawer-body .ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item:hover {
+  border-bottom-color: transparent;
+}
+
+.username {
+  display: none;
+  margin-left: 8px;
+}
+
+@media (max-width: 767px) {
+  .menuButton {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .leftMenu,
+  .rightMenu {
+    display: none;
+  }
+
+  .logo a {
+    margin-left: -10px;
+  }
+
+  .ant-drawer-title > .brand-font {
+    margin-bottom: 0;
+  }
+
+  .username {
+    display: inline-block;
+  }
+}
+
+.menu-items li{
+  color: white !important;
+margin: 0 20px !important;
+height: 1px;
+}
+
+/* Navbar End */
+
+.ant-layout{
+  background-color: #07041a;
+}
+header.ant-layout-header.css-dev-only-do-not-override-1vr7spz{
+  background-color: #07041a !important;
+}
+
+header.ant-layout-header.nav-header.css-dev-only-do-not-override-1vr7spz {
+background-color: #1B143F !important;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-images {
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    min-height: 100vh;
+  }
+  .courses {
+    background-size: cover; 
+  }
+  .categories-images {
+    background-position: 50% 4%;
+    background-repeat: no-repeat;
+    height: calc(88vh - 11rem);
+    background-size: 102% 61%;
+}
+.student-bg {
+  background-position: 45% 85%;
+  height: 158vh;
+}
+.dominate-bg {
+  background-position: 81% 159%;
+  height: 85vh;
+  background-size: 107% 108%;
+}
+.menu-items li{
+display: flex;
+flex-direction: column;
+height: 40px;
+font-weight: 600;
+color: white;
+}
+}
+
+@media (min-width: 1024px) {
+  .menu-items .menu-item {
+    color: white;
+  }
 }
