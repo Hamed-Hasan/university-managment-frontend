@@ -1,17 +1,28 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { Layout, Button, Drawer } from "antd";
 import LeftMenu from "./LeftMenu";
 import RightMenu from "./RightMenu";
 import { MenuOutlined } from "@ant-design/icons";
-import Image from "next/image";
 import Logo from "@/assets/um-nav-logo.png";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
+import { isLoggedIn } from "@/services/auth.service";
+import { redirect } from "next/navigation";
+
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const showDrawer = () => {
     setVisible(!visible);
+  };
+
+  const handleProfileClick = () => {
+    if (isLoggedIn()) {
+      return redirect("/profile");
+    } else {
+      return redirect("/login");
+    }
   };
 
   return (
@@ -48,7 +59,12 @@ const Navbar = () => {
               <div className="rightMenu relative lg:left-[5%]">
                 {/* <RightMenu mode={"horizontal"} /> */}
                 <Link href="/profile" >
-                <button className="ml-4 inline-flex text-white  bg-transparent border-0 py-2 px-6 focus:outline-none rounded text-lg header-button">Profile</button>
+                <button
+          className="ml-4 inline-flex text-white bg-transparent border-0 py-2 px-6 focus:outline-none rounded text-lg header-button"
+          onClick={handleProfileClick}
+        >
+          Profile
+        </button>
                 </Link>
               </div>
 
