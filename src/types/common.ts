@@ -1,3 +1,6 @@
+import { StaticImageData } from "next/image";
+
+
 export interface IMeta {
   limit: number;
   page: number;
@@ -373,7 +376,7 @@ export interface CourseProps {
   students: number;
   duration: string;
   price: string;
-  imageSrc: string;
+  imageSrc: string | StaticImageData;
 }
 
 

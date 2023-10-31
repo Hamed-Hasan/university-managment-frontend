@@ -14,7 +14,8 @@ import { useDepartmentsQuery } from '@/redux/api/departmentApi';
 
 const Charts = () => {
   const { data } = useDepartmentsQuery([]);
-  const departments = (data?.departments as unknown as any[]);
+  const departments = data?.departments as unknown as any[];
+  console.log(departments)
   const chartData = [
     {
       icon: <FcLineChart size={48} />,

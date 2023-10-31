@@ -31,7 +31,7 @@
 .header-button{
   border: 1px solid white;
   border-radius: 21px 0px;
-  padding: 7px 17px;
+  padding: 4px 26px !important;
 }
 
 .banner_btn_left, .banner_btn_right{
@@ -261,6 +261,40 @@ header.ant-layout-header.css-dev-only-do-not-override-1vr7spz{
 
 header.ant-layout-header.nav-header.css-dev-only-do-not-override-1vr7spz {
 background-color: #1B143F !important;
+}
+
+
+
+
+
+.ant-pagination .ant-pagination-prev button, .ant-pagination .ant-pagination-next button {
+  color: rgb(255 255 255 / 88%);
+
+}
+
+.ant-pagination .ant-pagination-disabled .ant-pagination-item-link, .ant-pagination .ant-pagination-disabled:hover .ant-pagination-item-link {
+  color: rgb(255 255 255);
+
+}
+
+
+.ant-pagination .ant-pagination-item a {
+  color: rgb(159 143 143 / 88%);
+  color: rgb(145 143 143 / 88%) !important;
+}
+
+.ant-layout-content h1 {
+  color: white;
+  font-weight: 600;
+}
+
+.ant-breadcrumb a {
+  color: rgb(255 255 255 / 64%);
+}
+
+.ant-breadcrumb a:hover {
+  color: rgb(174 174 174 / 88%);
+  background-color: rgba(0, 0, 0, 0.06);
 }
 
 @media screen and (max-width: 768px) {

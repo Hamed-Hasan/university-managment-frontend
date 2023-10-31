@@ -1,4 +1,10 @@
 import  {CourseProps, Category } from "./common";
+import Course1 from "@/assets/course1.png"
+import Course2 from "@/assets/course2.png"
+import Course3 from "@/assets/course3.png"
+import Course4 from "@/assets/course4.png"
+import Course5 from "@/assets/course5.png"
+import Course6 from "@/assets/course6.png"
 
 export const coursesData: CourseProps[] = [
 
@@ -9,7 +15,7 @@ export const coursesData: CourseProps[] = [
         students: 5957,
         duration: "01h 49m",
         price: "$16",
-        imageSrc: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageSrc: Course1,
       },
       {
         id: 2,
@@ -18,7 +24,7 @@ export const coursesData: CourseProps[] = [
         students: 3421,
         duration: "02h 15m",
         price: "$22",
-        imageSrc: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageSrc: Course2,
       },
       {
         id: 3,
@@ -27,7 +33,7 @@ export const coursesData: CourseProps[] = [
         students: 8796,
         duration: "03h 30m",
         price: "$30",
-        imageSrc: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageSrc: Course3,
       },
       {
         id: 4,
@@ -36,7 +42,7 @@ export const coursesData: CourseProps[] = [
         students: 5123,
         duration: "02h 10m",
         price: "$25",
-        imageSrc: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageSrc: Course4,
       },
       {
         id: 5,
@@ -45,7 +51,7 @@ export const coursesData: CourseProps[] = [
         students: 7534,
         duration: "02h 55m",
         price: "$28",
-        imageSrc: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageSrc: Course5,
       },
       {
         id: 6,
@@ -54,7 +60,7 @@ export const coursesData: CourseProps[] = [
         students: 4239,
         duration: "02h 30m",
         price: "$20",
-        imageSrc: "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageSrc: Course6,
       },
 ]
 

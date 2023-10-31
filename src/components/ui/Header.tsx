@@ -40,6 +40,8 @@ const Header = () => {
         <p
           style={{
             margin: "0px 5px",
+            color:"white",
+            fontWeight: "bold",
           }}
         >
           {role}

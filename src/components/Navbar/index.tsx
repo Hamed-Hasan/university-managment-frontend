@@ -46,7 +46,10 @@ const Navbar = () => {
               </Button>
 
               <div className="rightMenu relative lg:left-[5%]">
-                <RightMenu mode={"horizontal"} />
+                {/* <RightMenu mode={"horizontal"} /> */}
+                <Link href="/profile" >
+                <button className="ml-4 inline-flex text-white  bg-transparent border-0 py-2 px-6 focus:outline-none rounded text-lg header-button">Profile</button>
+                </Link>
               </div>
 
               <Drawer

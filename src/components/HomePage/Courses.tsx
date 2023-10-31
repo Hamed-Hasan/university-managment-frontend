@@ -15,14 +15,14 @@ const CourseCard: React.FC<CourseProps> = ({
   price,
   imageSrc,
 }) => (
-  <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 p-4">
+  <div className="p-4 the-card">
     <div className="max-w-sm border-0 bg-[#2D2752] border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative">
-      <div className="absolute bg-[#084FC7] text-slate-200 right-8 rounded-full font-bold top-52 p-4">
+      <div className="absolute bg-[#084FC7] text-slate-200 right-8 rounded-full font-bold top-28 p-4">
         {price}
       </div>
       <a href="#">
         <Image
-          width={500}
+          width={400}
           height={500}
           className="rounded-t-lg"
           src={imageSrc}
@@ -43,27 +43,27 @@ const CourseCard: React.FC<CourseProps> = ({
   </div>
 );
 
+
 const Courses: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000); 
+    }, 1000);
   }, []);
 
   return (
-    <div className="courses container mx-auto">
+    <div className="courses container mx-auto px-12">
       <div className="mx-auto text-center pb-14">
         <p className="text-[#B7CBFA] text-lg font-semibold">Join Dominie At Best</p>
         <h2 className="text-white text-3xl font-bold">Featured Courses</h2>
       </div>
 
       {isLoading ? (
-       <Loading/>
+        <Loading />
       ) : (
-   
-        <div className="flex flex-wrap">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-12 ">
           {coursesData.map((course) => (
             <CourseCard
               key={course.id}
