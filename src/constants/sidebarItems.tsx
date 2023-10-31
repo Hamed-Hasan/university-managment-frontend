@@ -7,6 +7,11 @@ import {
   ThunderboltOutlined,
   CreditCardOutlined,
   FileTextOutlined,
+  SolutionOutlined,
+  NodeExpandOutlined,
+  SafetyOutlined,
+  UsergroupAddOutlined,
+  NodeIndexOutlined,
 } from "@ant-design/icons";
 import Link from "next/link";
 import { USER_ROLE } from "./role";
@@ -32,12 +37,12 @@ export const sidebarItems = (role: string) => {
   const commonAdminSidebarItems: MenuProps["items"] = [
     {
       label: <Link href={`/${role}/manage-student`}>Manage Students</Link>,
-      icon: <TableOutlined />,
+      icon: <SolutionOutlined />,
       key: `/${role}/manage-student`,
     },
     {
       label: <Link href={`/${role}/manage-faculty`}>Manage Faculty</Link>,
-      icon: <TableOutlined />,
+      icon: <NodeExpandOutlined />,
       key: `/${role}/manage-faculty`,
     },
   ];
@@ -114,18 +119,18 @@ export const sidebarItems = (role: string) => {
     ...commonAdminSidebarItems,
     {
       label: <Link href={`/${role}/admin`}>Manage Admin</Link>,
-      icon: <TableOutlined />,
+      icon: <SafetyOutlined />,
       key: `/${role}/admin`,
     },
     {
       label: <Link href={`/${role}/user`}>Manage User</Link>,
-      icon: <TableOutlined />,
+      icon: <UsergroupAddOutlined />,
       key: `/${role}/user`,
     },
     {
       label: "Management",
       key: "management",
-      icon: <AppstoreOutlined />,
+      icon: <NodeIndexOutlined />,
       children: [
         {
           label: <Link href={`/${role}/department`}>Department</Link>,
