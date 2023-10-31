@@ -297,6 +297,31 @@ background-color: #1B143F !important;
   background-color: rgba(0, 0, 0, 0.06);
 }
 
+.ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+  color: rgb(255 255 255 / 88%);
+}
+
+.ant-steps .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+  color: rgb(255 255 255 / 88%);
+}
+.ant-steps .ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+  color: rgb(255 255 255 / 91%);
+}
+.ant-steps .ant-steps-item-wait .ant-steps-item-icon {
+  background-color: #E6F4FF;
+  border-color: transparent;
+}
+.ant-row {
+  color: white;
+}
+.ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload.ant-upload-select, .ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload.ant-upload-select {
+  background-color: rgb(255 255 255);
+}
+
+.ant-layout-content.css-dev-only-do-not-override-1vr7spz {
+color: white !important;
+}
+
 @media screen and (max-width: 768px) {
   .banner-images {
     background-size: cover;
