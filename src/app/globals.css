@@ -314,6 +314,10 @@ background-color: #1B143F !important;
 .ant-row {
   color: white;
 }
+
+.ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis, .ant-pagination .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis {
+  color: rgb(207 204 204 / 89%) !important;
+}
 .ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload.ant-upload-select, .ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload.ant-upload-select {
   background-color: rgb(255 255 255);
 }
